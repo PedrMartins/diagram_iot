@@ -93,19 +93,19 @@ rect(xleft=3.3, ybottom=7.5, xright=10.7, ytop=11.5, density = NULL, angle = 45,
 segments(10,3.5,y1=7.5, lty=2)
 arrows(x0 = 10, y0 = 3.5, x1 = 11.5, 
        col = "black", length = 0.1, angle = 45, lty=2)
-text("Crop \n AoI from \noriginal\n frame\n (HD) \n 2.1",
+text("Crop \n AoI from \nOriginal\n Frame\n (HD) \n 2.1",
      x=7, y = 9.5, cex= 1.5)
 arrows(x0 = 10.7, y0 = 9.5, x1 = 11.3, 
        col = "black", length = 0.1, angle = 45)
 rect(xleft=11.5, ybottom=7.5, xright=18.5, ytop=11.5, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Image \ndownsize \n (Z times) \n 2.2b",
+text("Image \nDownsize \n(Z times) \n2.2b",
      x=15, y = 9.5, cex= 1.5)
 arrows(x0 = 18.5, y0 = 9.5, x1 = 19.2, 
        col = "black", length = 0.1, angle = 45)
 rect(xleft=19.5, ybottom=7.5, xright=26.5, ytop=11.5, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Object \ndetection \n 2.3",
+text("Object \nDetection \n 2.3",
      x=23, y = 9.5, cex= 1.5)
 arrows(x0 = 26.5, y0 = 9.5, x1 = 27.15, 
        col = "black", length = 0.1, angle = 45)
@@ -128,7 +128,7 @@ text("Frame of \nInterest \n Generation \n 2.2a",
      x=16, y = 3.5, cex= 1.5)
 arrows(x0 = 14.5, y0 = 5, y1 = 7.3, 
        col = "black", length = 0.1, angle = 45,lty=2)
-text("Objects \ndetected",
+text("Objects \nDetected",
      x=44, y = 9.5, cex= 2)
 dev.off()
 
