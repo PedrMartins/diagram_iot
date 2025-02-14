@@ -1,71 +1,89 @@
-par()$mar
 
-
-par(mar= c(1, 1, 1, 3),bty="n", xaxt="n", family="serif", yaxt="n")
+jpeg("Diagram.jpg", height = 700 ,width = 1000)
+par(mar= c(1, 1, 1, 3),bty="n", xaxt="n",
+    family="serif", yaxt="n", bg="gray90")
 plot(x = c(-1,20), y = c(1,10), type="n", xlab = "",
      ylab="")
-text("High resolution \n image", x=2, y = 8, cex= 0.7)
+text("High resolution \n image", x=2, y = 8, cex= 2)
 segments(2,7.3,y1=4)
 arrows(x0 = 2, y0 = 5.4, x1 = 12.5, 
        col = "black", length = 0.1, angle = 45)
 arrows(x0 = 2, y0 = 4, x1 = 12.5, 
        col = "black", length = 0.1, angle = 45)
-rect(xleft=3.5, ybottom=4.5, xright=8.3, ytop=6.3, density = NULL, angle = 45,
-     col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Areas of Interest \n detection", x=6, y = 5.5, cex= 0.8)
+rect(xleft=3.5, ybottom=4.5, 
+     xright=8.3, ytop=6.7, 
+     density = NULL, angle = 45,
+     col = "lightblue", border = NULL, 
+     lty = par("lty"), lwd = par("lwd"))
+text("Areas of Interest \n detection \n 1", x=6, y = 5.5, cex= 2)
 
-text("Areas of  Interest \n position", x=10.5, y = 6.1, cex= 0.6)
-rect(xleft=13, ybottom=3.5, xright=16.2, ytop=6, density = NULL, angle = 45,
+text("Areas of  Interest \n position", x=10.5, y = 6.1, cex= 2)
+rect(xleft=13, ybottom=3.5, 
+     xright=16.2, ytop=6,
+     density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Object  \n detection", x=14.5, y = 4.8, cex= 0.8)
+text("Object  \n detection \n 2", x=14.5, y = 4.8, cex= 2)
 arrows(x0 = 16.3, y0 = 4.75, x1 = 17.5, 
        col = "black", length = 0.07, angle = 45)
-text("Object \n detected", x=18.5, y = 4.75, cex= 0.7)
+text("Object \n detected", x=18.5, y = 4.75, cex= 2)
 
 dev.off()
 
-(11+14.2)/2
-(3.5+6)/2
 
 
-
+jpeg("Diagram2.jpg", height = 700 ,width = 1300)
 par(mar= c(1, 1, 1, 3),bty="n", xaxt="n", family="serif", yaxt="n")
 plot(x = c(1,15), y = c(1,10), type="n", xlab = "",
      ylab="")
-text("High resolution \n image", x=2, y = 8, cex= 0.9)
+text("High resolution \n image", x=2, y = 8, cex= 2)
 segments(2,7.3,y1=5.4)
 arrows(x0 = 2, y0 = 5.4, x1 = 12.5, 
        col = "black", length = 0.1, angle = 45)
 rect(xleft=5, ybottom=4.5, xright=10, ytop=6.5, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Object  \n detection", x=7.5, y = 5.5, cex= 1)
-text("Objects \n detected", x=13.5, y = 5.3, cex= 0.9)
+text("Object  \n detection", x=7.5, y = 5.5, cex= 2)
+text("Objects \n detected", x=13.5, y = 5.3, cex= 2)
 
 dev.off()
 
-par(mar= c(1, 1, 1, 3),bty="n", xaxt="n", family="serif", yaxt="n")
+jpeg("Diagram3.jpg", height = 1300 ,width = 2500)
+par(mar= c(1, 2, 1, 2),bty="n", xaxt="n", family="serif", yaxt="n")
 plot(x = c(1,25), y = c(1,10), type="n", xlab = "",
-     ylab="")
-text("High resolution \n image", x=2, y = 9.5, cex= 0.9)
-segments(2,9,y1=4)
-arrows(x0 = 2, y0 = 4, x1 = 18, 
-       col = "black", length = 0.1, angle = 45)
+     ylab="", bg = "gray75")
+text("High-Definition \n Video Frame", x=2.5, y = 9.5, cex= 2)
+arrows(2,8.8,y1=8.2, 
+         col = "black", 
+         length = 0.1, 
+         angle = 45)
+
 rect(xleft=0.5, ybottom=6.5, xright=3.5, ytop=8, density = NULL, angle = 45,
-     col = "lightgreen", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Crop out \n 1.0", x=2, y = 7.3, cex= 0.8)
-rect(xleft=0.5, ybottom=3, xright=3.5, ytop=4.8, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Image \n downsize \n of X times 1.2", 
-     x=1.9, y = 4, cex= 0.8)
-rect(xleft=5.5, ybottom=3, xright=8.5, ytop=4.8, density = NULL, angle = 45,
+text("Crop out \n 1.0", x=2, y = 7.3, cex= 2)
+arrows(2,6.5,y1=5.5, 
+       col = "black", 
+       length = 0.1, 
+       angle = 45)
+arrows(x0 = 2, y0 = 4, x1 = 5, 
+       col = "black", length = 0.1, angle = 45)
+
+rect(xleft=0.5, ybottom=2.2, xright=3.5, ytop=5.3, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Areas of Interest \n detection \n 1.3", 
-     x=7, y = 3.9, cex= 0.8)
-rect(xleft=10.5, ybottom=3, xright=15.5, ytop=4.8, density = NULL, angle = 45,
+text("Image \n Scalling \n (factor X) \n 1.1", 
+     x=1.9, y = 4, cex= 2)
+
+rect(xleft=5.2, ybottom=2.2, xright=8.8, ytop=5.3, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Select bounding boxes \n conficence trheshold of Y  \n 1.4", 
-     x=13, y = 3.9, cex= 0.8)
-text("Areas of  Interest \n position", x=20.4, y = 3.9, cex= 0.8)
+text("Areas of \nInterest \n Detection \n 1.2", 
+     x=7, y = 3.9, cex= 2)
+arrows(x0 = 8.8, y0 = 4, x1 = 10.2, 
+       col = "black", length = 0.1, angle = 45)
+rect(xleft=10.5, ybottom=2.2, xright=15.5, ytop=5.3, density = NULL, angle = 45,
+     col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
+text("Bounding \n Box Selection \n (threshold Y)  \n 1.3", 
+     x=13.1, y = 3.9, cex= 2)
+arrows(x0 = 15.5, y0 = 4, x1 = 18, 
+       col = "black", length = 0.1, angle = 45)
+text("Areas of  Interest \nposition", x=21, y = 3.9, cex= 2)
 
 dev.off()
 
@@ -120,6 +138,6 @@ arrows(x0 = 14.5, y0 = 5, y1 = 7.3,
        col = "black", length = 0.1, angle = 45,lty=2)
 text("Objects \n detected",
      x=37, y = 9.5, cex= 0.9)
-
+dev.off()
 
 
