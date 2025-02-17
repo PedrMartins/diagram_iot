@@ -28,6 +28,8 @@ dev.off()
 
 ############diagrama figura 2#########
 
+
+jpeg ("Diagram2.jpeg", width = 500)
 par(mar= c(1, 1, 1, 3),bty="n", xaxt="n", family="serif", yaxt="n")
 plot(x = c(1,15), y = c(1,10), type="n", xlab = "",
      ylab="")
@@ -39,6 +41,7 @@ rect(xleft=5, ybottom=4.5, xright=10, ytop=6.5, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
 text("Object  \n detection", x=7.5, y = 5.5, cex= 1)
 text("Objects \n detected", x=13.5, y = 5.3, cex= 0.9)
+dev.off()
 
 ############diagrama figura 3#########
 jpeg ("Diagram3.jpeg", width = 600)
