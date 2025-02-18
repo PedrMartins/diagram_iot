@@ -6,7 +6,7 @@ jpeg ("Diagram.jpeg", width = 500)
 par(mar= c(1, 1, 1, 3),bty="n", xaxt="n", family="serif", yaxt="n")
 plot(x = c(-1,25), y = c(1,10), type="n", xlab = "",
      ylab="")
-text("High resolution \nimage", x=2, y = 8, cex= 1.5)
+text("High-Definition \nVideo Frame", x=2, y = 8, cex= 1.5)
 segments(2,7.3,y1=4)
 arrows(x0 = 2, y0 = 5.4, x1 = 13.5, 
        col = "black", length = 0.1, angle = 45)
@@ -33,7 +33,7 @@ jpeg ("Diagram2.jpeg", width = 500)
 par(mar= c(1, 1, 1, 3),bty="n", xaxt="n", family="serif", yaxt="n")
 plot(x = c(1,15), y = c(1,10), type="n", xlab = "",
      ylab="")
-text("High resolution \n image", x=2, y = 8, cex= 0.9)
+text("High-Definition \nVideo Frame", x=2, y = 8, cex= 0.9)
 segments(2,7.3,y1=5.4)
 arrows(x0 = 2, y0 = 5.4, x1 = 12.5, 
        col = "black", length = 0.1, angle = 45)
@@ -49,7 +49,7 @@ par(mar= c(1, 1, 1, 2),bty="n", xaxt="n",
     family="serif", yaxt="n")
 plot(x = c(-1,25), y = c(1,10), 
      type="n", xlab = "",ylab="")
-text("High-Definition \n Video Frame", x=2, y = 9.5, cex= 1.5)
+text("High-Definition \nVideo Frame", x=2, y = 9.5, cex= 1.5)
 arrows(x0 = 2, y0 = 9, y1 = 8.2, 
        col = "black", length = 0.1, angle = 45)
 rect(xleft=0, ybottom=6.5, xright=4, ytop=8, density = NULL, angle = 45,
@@ -61,7 +61,7 @@ arrows(x0 = 2, y0 = 4.4, x1 = 4.7,
        col = "black", length = 0.1, angle = 45)
 rect(xleft=0, ybottom=3, xright=4, ytop=5.8, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Image \n Scalling \n (factor X) \n 1.1", 
+text("Image \n Scalling \n (Factor X) \n 1.1", 
      x=1.9, y = 4.4, cex= 1.5)
 rect(xleft=5, ybottom=3, xright=9, ytop=5.8, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
@@ -71,7 +71,7 @@ text("Areas of \nInterest \n Detection \n 1.2",
      x=7.1, y =  4.4, cex= 1.5)
 rect(xleft=9.7, ybottom=3, xright=16.8, ytop=5.8, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Bounding \n Box Selection \n (threshold Y)  \n 1.3", 
+text("Bounding \n Box Selection \n (Threshold Y)  \n 1.3", 
      x=13.4, y =  4.4, cex= 1.5)
 arrows(x0 = 16.8, y0 = 4.4, x1 = 18, 
        col = "black", length = 0.1, angle = 45)
@@ -82,7 +82,7 @@ dev.off()
 
 ############diagrama figura 4#########
 
-jpeg ("Diagram4.jpeg", width = 1000)
+jpeg ("Diagram4.jpeg", height = 700, width = 900)
 par(mar= c(1, 1, 1, 3),bty="n", xaxt="n", family="serif", yaxt="n")
 plot(x = c(-3,45), y = c(1,12), type="n", xlab = "",
      ylab="")
@@ -97,38 +97,38 @@ segments(10,3.5,y1=7.5, lty=2)
 arrows(x0 = 10, y0 = 3.5, x1 = 11.5, 
        col = "black", length = 0.1, angle = 45, lty=2)
 text("Crop \n AoI from \nOriginal\n Frame\n (HD) \n 2.1",
-     x=7, y = 9.5, cex= 1.5)
+     x=7, y = 9.5, cex= 2)
 arrows(x0 = 10.7, y0 = 9.5, x1 = 11.3, 
        col = "black", length = 0.1, angle = 45)
 rect(xleft=11.5, ybottom=7.5, xright=18.5, ytop=11.5, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
 text("Image \nDownsize \n(Z times) \n2.2b",
-     x=15, y = 9.5, cex= 1.5)
+     x=15, y = 9.5, cex= 2)
 arrows(x0 = 18.5, y0 = 9.5, x1 = 19.2, 
        col = "black", length = 0.1, angle = 45)
 rect(xleft=19.5, ybottom=7.5, xright=26.5, ytop=11.5, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
 text("Object \nDetection \n 2.3",
-     x=23, y = 9.5, cex= 1.5)
+     x=23, y = 9.5, cex= 2)
 arrows(x0 = 26.5, y0 = 9.5, x1 = 27.15, 
        col = "black", length = 0.1, angle = 45)
 rect(xleft=27.3, ybottom=7.5, xright=40, ytop=11.5, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
 text(" Bounding \nBoxes  \n(Confidence > P) \n2.4",
-     x=33.75, y = 9.5, cex= 1.5)
+     x=33.75, y = 9.5, cex= 2)
 arrows(x0 = 40, y0 = 9.5, x1 = 41, 
        col = "black", length = 0.1, angle = 45)
 rect(xleft=-1, ybottom=2, xright=8, ytop=5, density = NULL, angle = 45,
      col = "lightgreen", border = NULL, lty = 2, lwd = par("lwd"))
 text("Area of \nInterest \n Repositioning \n 2.0",
-     x=3.75, y = 3.5, cex= 1.5)
+     x=3.75, y = 3.5, cex= 2)
 segments(8,3.5,x1=8.5, lty=2)
 arrows(x0 = 8.5, y0 = 3.5, y1 = 7.3, 
        col = "black", length = 0.1, angle = 45,lty=2)
 rect(xleft=12, ybottom=2, xright=20.3, ytop=5, density = NULL, angle = 45,
      col = "lightgreen", border = NULL, lty = 2, lwd = par("lwd"))
 text("Frame of \nInterest \n Generation \n 2.2a",
-     x=16, y = 3.5, cex= 1.5)
+     x=16, y = 3.5, cex= 2)
 arrows(x0 = 14.5, y0 = 5, y1 = 7.3, 
        col = "black", length = 0.1, angle = 45,lty=2)
 text("Objects \nDetected",
