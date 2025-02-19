@@ -29,18 +29,18 @@ dev.off()
 ############diagrama figura 2#########
 
 
-jpeg ("Diagram2.jpeg", width = 500)
+jpeg ("Diagram2.jpeg", width = 900)
 par(mar= c(1, 1, 1, 3),bty="n", xaxt="n", family="serif", yaxt="n")
 plot(x = c(1,15), y = c(1,10), type="n", xlab = "",
      ylab="")
-text("High-Definition \nVideo Frame", x=2, y = 8, cex= 0.9)
+text("High-Definition \nVideo Frame", x=2, y = 8, cex= 2)
 segments(2,7.3,y1=5.4)
 arrows(x0 = 2, y0 = 5.4, x1 = 12.5, 
        col = "black", length = 0.1, angle = 45)
 rect(xleft=5, ybottom=4.5, xright=10, ytop=6.5, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Object  \n detection", x=7.5, y = 5.5, cex= 1)
-text("Objects \n detected", x=13.5, y = 5.3, cex= 0.9)
+text("Object  \n detection", x=7.5, y = 5.5, cex= 2)
+text("Objects \n detected", x=13.5, y = 5.3, cex= 2)
 dev.off()
 
 ############diagrama figura 3#########
@@ -86,7 +86,7 @@ jpeg ("Diagram4.jpeg", height = 700, width = 900)
 par(mar= c(1, 1, 1, 3),bty="n", xaxt="n", family="serif", yaxt="n")
 plot(x = c(-3,45), y = c(1,12), type="n", xlab = "",
      ylab="")
-text("High-\ndefinition \nVideo \nFrame", x=-0.5, y = 9.5, cex= 2)
+text("High-\nDefinition \nVideo \nFrame", x=-0.5, y = 9.5, cex= 2)
 arrows(x0 = 2, y0 = 9.5, x1 = 3, 
        col = "black", length = 0.1, angle = 45)
 arrows(x0 = 0, y0 = 7.5, y1 = 5.5, 
@@ -135,7 +135,6 @@ text("Objects \nDetected",
      x=44, y = 9.5, cex= 2)
 dev.off()
 
-
 ############diagrama figura 5#########
 
 jpeg ("diagram5.jpeg", width = 600)
@@ -143,7 +142,7 @@ par(mar= c(1, 1, 1, 3),bty="n", xaxt="n",
     family="serif", yaxt="n")
 plot(x = c(-1,55), y = c(1,8), type="n", xlab = "",
      ylab="")
-text("High\n Resolution \nImage", x=3, y = 7, cex= 1.5)
+text("High-\nDefinition \nVideo Frame", x=3, y = 7, cex= 1.5)
 segments(3,3.5,y1=6)
 arrows(x0 = 3, y0 = 3.5, x1 = 7.3, 
        col = "black", length = 0.1, angle = 45)
@@ -258,7 +257,7 @@ par(mar= c(1, 1, 1, 3),bty="n", xaxt="n",
     family="serif", yaxt="n")
 plot(x = c(-1,25), y = c(1,10), type="n", xlab = "",
      ylab="")
-text("High Resolution \nImage", x=2, y = 8, cex= 1.5)
+text("High-Definition \nVideo Frame", x=2, y = 8, cex= 1.5)
 segments(2,7.3,y1=3.5)
 segments(8.8,5,x1=9.8, lty = 2)
 segments(9.8,5,y1=4.2, lty = 2)
