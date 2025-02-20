@@ -61,7 +61,7 @@ arrows(x0 = 2, y0 = 4.4, x1 = 4.7,
        col = "black", length = 0.1, angle = 45)
 rect(xleft=0, ybottom=3, xright=4, ytop=5.8, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
-text("Image \n Scalling \n (Factor X) \n 1.1", 
+text("Image \n Scaling \n (Factor X) \n 1.1", 
      x=1.9, y = 4.4, cex= 1.5)
 rect(xleft=5, ybottom=3, xright=9, ytop=5.8, density = NULL, angle = 45,
      col = "lightblue", border = NULL, lty = par("lty"), lwd = par("lwd"))
